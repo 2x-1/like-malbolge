@@ -16,10 +16,11 @@ Most, if not all, instructions operate on the stack.
 
 | (PC+[PC])%94 | Arguments | Description |
 | :----------: | :-------: | :---------: |
-|      8       |           |  B = [C]    |
-|      10      |           |   B --      |
-|      20      |           |             |
-|      25      |           |   B ++      |
+|      8       |     a     |    a + 1    |
+|      10      |   a, b    |    a + b    |
+|      20      |   a, b    |    a - b    |
+|      25      |     a     |    a - 1    |
+|      42      | | |
 |      78      |           | Halt the machine |
-|      81      |           |   B += [C]  |
-|      92      |           |   B -= [C]  |
+|      81      |   a, b    |    a & b    |
+|      92      |   a, b    |    a | b    |
