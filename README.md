@@ -16,4 +16,9 @@ The instructions set is intentionally kept very sparse to ease programming. All 
 | (PC+[PC])%94 | Description |
 | :----------: | :---------: |
 |      8       |   B = [C]   |
+|      10      |   B --      |
+|      20      |             |
+|      25      |   B ++      |
 |      78      | Halt the machine |
+|      81      |   B += [C]  |
+|      92      |   B -= [C]  |
