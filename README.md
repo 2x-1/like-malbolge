@@ -24,6 +24,7 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |      20      |   a, b    |    a - b    |
 |      25      |           |    A --     |
 |      42      |           | Officially defined NOP |
+|      51      |           | If A == 0, C += signed [C] ord value |
 |      78      |           | Halt the machine |
 |      81      |   a, b    |    a & [C]  |
-|      92      |   a, b    |    a | [C]   |
+|      92      |   a, b    |    a | [C]  |
