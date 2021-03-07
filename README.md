@@ -22,6 +22,7 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |      8       |           |    A ++     |
 |      10      |   a       |    A += a   |
 |      20      |   a       |    A -= a   |
+|      21      |   a       |    A /= a   |
 |      25      |           |    A --     |
 |      30      |           |    push A   |
 |      35      |           |   push [A]  |
