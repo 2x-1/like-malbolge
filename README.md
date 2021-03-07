@@ -20,12 +20,13 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |  (C+[C])%94  | Arguments (discarded when used) | Description |
 | :----------: | :-------: | :---------: |
 |      8       |           |    A ++     |
-|      10      |   a, b    |    a + b    |
-|      20      |   a, b    |    a - b    |
+|      10      |   a       |    A += a   |
+|      20      |   a       |    A -= a   |
 |      25      |           |    A --     |
 |      30      |           |    push A   |
 |      35      |           |   push [A]  |
 |      36      |           |   push [C]  |
+|      38      |           | Swap A with TOS |
 |      42      |           | Officially defined NOP |
 |      51      |           | If A == 0, C += signed [C] ord value |
 |      55      |   a       | If A == a, C += signed [C] ord value |
