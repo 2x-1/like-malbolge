@@ -23,6 +23,8 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |      10      |   a, b    |    a + b    |
 |      20      |   a, b    |    a - b    |
 |      25      |           |    A --     |
+|      30      |           |    push A   |
+|      35      |           |   push [A]  |
 |      42      |           | Officially defined NOP |
 |      51      |           | If A == 0, C += signed [C] ord value |
 |      65      |   a       | [A] = a     |
