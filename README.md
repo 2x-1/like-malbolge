@@ -14,7 +14,8 @@ A bit of an experiment of a 8080 like machine code language, with ideas taken fr
 Decoded as `(C + [C]) % 94`. Some instructions may take the literal value of `[C]` as an immediate value. All codepoint values in `[0..255]` is allowed in a source program.
 
 ### Instruction set
-The instructions set is intentionally kept very sparse to ease programming. All undefined ops are NOPs.
+The instructions set is intentionally kept very sparse to ease programming.
+All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIGILL error.
 
 |  (C+[C])%94  | Arguments | Description |
 | :----------: | :-------: | :---------: |
@@ -22,7 +23,7 @@ The instructions set is intentionally kept very sparse to ease programming. All 
 |      10      |   a, b    |    a + b    |
 |      20      |   a, b    |    a - b    |
 |      25      |           |    A --     |
-|      42      | | |
+|      42      |           | Officially defined NOP |
 |      78      |           | Halt the machine |
 |      81      |   a, b    |    a & [C]  |
 |      92      |   a, b    |    a | [C]   |
