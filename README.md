@@ -17,7 +17,7 @@ Decoded as `(C + [C]) % 94`. Some instructions may take the literal value of `[C
 The instructions set is intentionally kept very sparse to ease programming.
 All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIGILL error.
 
-|  (C+[C])%94  | Arguments | Description |
+|  (C+[C])%94  | Arguments (discarded when used) | Description |
 | :----------: | :-------: | :---------: |
 |      8       |           |    A ++     |
 |      10      |   a, b    |    a + b    |
@@ -25,6 +25,7 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |      25      |           |    A --     |
 |      42      |           | Officially defined NOP |
 |      51      |           | If A == 0, C += signed [C] ord value |
+|      65      |   a       | [A] = a     |
 |      78      |           | Halt the machine |
 |      81      |   a, b    |    a & [C]  |
 |      92      |   a, b    |    a | [C]  |
