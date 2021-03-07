@@ -31,6 +31,9 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |      51      |           | If A == 0, C += signed [C] ord value |
 |      55      |   a       | If A == a, C += signed [C] ord value |
 |      65      |   a       | [A] = a     |
+|      66      |           | push [A++]  |
+|      67      |           | Repeat next instruction until TOS == 0 |
+|      68      |           | A--. If A >= 0, C += signed [C] |
 |      78      |           | Halt the machine |
 |      81      |   a, b    |    a & [C]  |
 |      88      |           |  A = SHL(A) |
