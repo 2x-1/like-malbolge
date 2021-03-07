@@ -1,5 +1,9 @@
 # like-malbolge
 A bit of an experiment of a 8080 like machine code language, with ideas taken from Malbolge
+## Design goals
+* The instructions should have as little side-effect as possible, to make it realistic to recover from instructions not supposed to be executed.
+  * The side effects should be accessible, in order to make use of the current condition.
+
 ## Registers
 * `PC` (unbounded): Initially 0, holds the address to the current program.
 * `SP` (unbounded): Holds the address to the top of the stack.
