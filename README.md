@@ -36,6 +36,7 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |      68      |           | A--. If A >= 0, C += signed [C] |
 |      78      |           | Halt the machine |
 |      81      |   a, b    |    a & [C]  |
-|      88      |           |  A = SHL(A) |
-|      89      |           |  A = ROL(A) |
+|      88      |           |  A = SHL(A, 1) |
+|      89      |           |  A = ROL(A, 1) |
+|      90      |   a       |  a << 8 + [C] |
 |      92      |   a, b    |    a | [C]  |
