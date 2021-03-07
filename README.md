@@ -30,4 +30,6 @@ All undefined ops are NOPs, unless the -p flag is set, in which they raise a SIG
 |      65      |   a       | [A] = a     |
 |      78      |           | Halt the machine |
 |      81      |   a, b    |    a & [C]  |
+|      88      |           |  A = SHL(A) |
+|      89      |           |  A = ROL(A) |
 |      92      |   a, b    |    a | [C]  |
